@@ -7,7 +7,6 @@
 #include <time.h>
 #include <sstream>
 #include <iomanip>
-#include "util.h"
 #include "SysInfo.h"
 #include "ProcessContainer.h"
 

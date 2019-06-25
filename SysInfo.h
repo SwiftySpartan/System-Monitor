@@ -28,8 +28,8 @@ public:
         this->getOtherCores(ProcessParser::getNumberOfCores());
         this->setLastCpuMeasures();
         this->setAttributes();
-        this-> OSname = ProcessParser::getOSName();
-        this-> kernelVer = ProcessParser::getSysKernelVersion();
+        this->OSname = ProcessParser::getOSName();
+        this->kernelVer = ProcessParser::getSysKernelVersion();
     }
     void setAttributes();
     void setLastCpuMeasures();
