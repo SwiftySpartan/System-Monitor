@@ -46,7 +46,18 @@ private:
   	static float getSysIdleCpuTime(vector<string>values);
 };
 
-// TODO: Define all of the above functions below:
+bool ProcessParser::isPidExisting(string pid){
+    bool exists = false;
+    vector<string>list = ProcessParser::getPidList();
+    for (int i=0; i<list.size(); i++){
+        if(pid == list[i]){
+            exists = true;
+            break;
+        }
+    }
+    return exists;  
+}
+
 std::string ProcessParser::getCmd(std::string pid) {
     std::string line;
 
